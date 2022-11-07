@@ -5,7 +5,6 @@ export const navigation = () => {
   const navItemContainer = document.querySelectorAll('.nav-item');
 
   mobileNavToggle.addEventListener('click', (e) => {
-    console.log(e.target)
     e.target.classList.toggle('active');
     navContainer.classList.toggle('active');
     document.querySelector('section').style.overflow = 'hidden'
@@ -13,12 +12,6 @@ export const navigation = () => {
 
   navItemContainer.forEach((list) => {
     const navItemLink = list.querySelector('a');
-
-    if (list.children.length > 1) {
-      navItemLink.addEventListener('click', (e) => console.log(e.target));
-    }
-
-    console.log(navMarker)
 
     navItemLink.addEventListener('mouseover', () => {
       let position = list.getBoundingClientRect();
@@ -31,22 +24,4 @@ export const navigation = () => {
       navMarker.classList.remove('active');
     });
   });
-  // document.querySelector('nav ul li a:not(:only-child)').click(function(e) {
-  //   this.siblings('.nav-dropdown').toggle();
-
-  //   document.getElementByClassName("nav-dropdown").not(this.siblings()).style.display = "none";
-  //   e.stopPropagation();
-  // });
-
-  // $('html').click(function() {
-  //   document.getElementByClassName("nav-dropdown").style.display = "none";
-  // });
-
-  // document.getElementById("nav-toggle").click(function() {
-  //   $('nav ul').slideToggle();
-  // });
-
-  // document.getElementById("nav-toggle").addEventListener('click', (e) => {
-  //   this.classList.toggle('active');
-  // });
 };
