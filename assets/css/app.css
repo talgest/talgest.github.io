@@ -1,3 +1,9 @@
+/* normalize */
+@import './normalize.css';
+
+/* global component stylings */
+@import './components/navigation.css';
+
 /* page stylings */
 @import '../../pages/home/home.css';
 @import '../../pages/about/about.css';
@@ -5,6 +11,3 @@
 @import '../../pages/hazards/hazards.css';
 @import '../../pages/quizzes/quizzes.css';
 @import '../../pages/volcanoes/volcanoes.css';
-
-/* global stylings */
-@import './components/navigation.css'

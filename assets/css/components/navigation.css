@@ -1,25 +1,130 @@
-.navbar {
+.navbar,
+.nav-branding {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
   flex-direction: column;
   background-color: #0B4A5D;
-  padding: 15px;
 }
 
 .nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-toggle {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  pointer-events: none;
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+span::before {
+  top: -10px;
+}
+
+span::after {
+  bottom: -10px;
+}
+
+.nav-toggle.active span {
+  background-color: transparent;
+}
+
+.nav-toggle.active span::before,
+.nav-toggle.active span::after {
+  top: 0;
+}
+
+.nav-toggle.active span::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active span::after {
+  transform: rotate(-45deg);
+}
+
+.nav-marker {
+  display: none;
+	position: absolute;
+	background-color: aquamarine;
+	transition: .3s ease left, width, opacity;
+	opacity: 0;
+  height: 80px;
+  top: 0;
+}
+
+.nav-marker.active {
+	opacity: 1;
 }
 
 .nav {
   display: none;
+  background-color: #0B4A5D;
   margin: 0;
   padding: 0;
+  z-index: 1;
+  animation: dropFadeInDown 300ms;
 }
 
-.nav li {
+.nav.active {
+  display: block;
+  position: absolute;
+  top: 40px;
+}
+
+.sub-nav {
+  background-color: #0B4A5D;
+}
+
+.nav-item,
+.sub-nav-item {
   list-style: none;
+  position: relative;
+}
+
+.nav-item > a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-nav-item {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar a,
@@ -32,13 +137,84 @@
 @media only screen and (min-width: 768px) {
   .navbar {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav-mobile {
     display: none;
   }
 
+  .nav-branding {
+    width: auto;
+  }
+
+  .nav-marker {
+    display: block;
+  }
+
   .nav {
+    background: transparent;
+    overflow: visible;
     display: flex;
+    height: 80px;
+  }
+
+  .sub-nav {
+    display: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+
+  .sub-nav-item {
+    padding: 10px 5px;
+  }
+
+  .nav-logo {
+    height: 60px;
+  }
+
+  .nav-item a {
+    padding: 26px 10px;
+  }
+
+  .nav-item a span {
+    font-size: 1.5rem;
+  }
+
+  .nav-item:hover .sub-nav {
+    display: block;
+    animation: dropFadeInUp 300ms;
+  }
+
+  .sub-nav-item:hover {
+    background-color: aquamarine;
+  }
+}
+
+/* animations */
+@keyframes dropFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes dropFadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
