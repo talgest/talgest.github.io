@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #0B4A5D;
+  padding: 15px;
+}
+
+.nav-mobile {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.navbar a,
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+}
