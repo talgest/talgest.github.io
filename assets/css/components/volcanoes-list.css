@@ -1,0 +1,33 @@
+.volcanoes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.volcanoes-list li {
+  list-style: none;
+}
+
+.volcanoes-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--blue-color);
+  font-family: var(--heading);
+}
+
+.volcanoes-list li a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 915px) {
+  .volcanoes-list {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
