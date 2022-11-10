@@ -1,0 +1,30 @@
+:root {
+  --blue-color: #185A87;
+  --white-color: #ffffff;
+  --black-color: #202020;
+  --grey-color: #EFEFED;
+}
+
+h3,
+h2 {
+  color: var(--blue-color);
+}
+
+p {
+  color: var(--black-color);
+}
+
+.blue-bg {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.blue-bg h3,
+.blue-bg h2,
+.blue-bg p {
+  color: var(--white-color);
+}
+
+.grey-bg {
+  background-color: var(--grey-color);
+}

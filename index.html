@@ -22,104 +22,134 @@
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-marker"></div>
-      <div class="nav-branding">
-        <a class="nav-logo" href="./index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="./index.html">
+            <div class="image-container nav-image">
+              <img src="./assets/images/TalgestLogo.png" />
+            </div>
+          </a>
+        </div>
+
+        <ul class="nav-list desktop">
+          <li class="nav-item">
+            <a href="#volcanoes">
+              <span>volcanoes</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#hazards">
+              <span>hazard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#cultures">
+              <span>culture</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#quizzes">
+              <span>quizzes</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about">
+              <span>about us</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="nav-list mobile">
+          <li class="nav-item">
+            <a href="./pages/volcanoes/volcanoes.html">
+              <span>volcanoes</span>
+            </a>
+
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/volcanoes/volcano/bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/volcanoes/volcano/kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/volcanoes/volcano/mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/volcanoes/volcano/pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/volcanoes/volcano/taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="./pages/hazards/hazards.html">
+              <span>hazard</span>
+            </a>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/hazard/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/hazard/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="./pages/cultures/cultures.html">
+              <span>culture</span>
+            </a>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/culture/notable-sites.html">
+                  Notable Sites
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/culture/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="./pages/quizzes/quizzes.html">
+              <span>quizzes</span>
+            </a>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/quiz/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/quiz/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="./pages/about/about.html">
+              <span>about</span>
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="./pages/volcanoes/volcanoes.html">
-            <span>volcanoes</span>
-          </a>
-
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./pages/volcanoes/volcano/bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/volcanoes/volcano/kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/volcanoes/volcano/mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/volcanoes/volcano/pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/volcanoes/volcano/taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a href="./pages/hazards/hazards.html">
-            
-            <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./pages/hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a href="./pages/cultures/cultures.html">
-            
-            <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./pages/cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a href="./pages/quizzes/quizzes.html">
-            
-            <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./pages/quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pages/quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a href="./pages/about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
     </nav>
 
     <!-- navbar section ends -->
@@ -127,9 +157,167 @@
     <!-- home section starts  -->
 
     <section class="main home">
-      <p>home</p>
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container">
+            <div class="title-container">
+              <h3 class="eyebrow">WELCOME TO</h3>
+              <h2 class="title">TALGEST</h2>
+            </div>
+            <p class="body">Discover and learn about Philippine Volcanoes</p>
+          </div>
+          <div class="image-container hero-image">
+            <img src="./assets/images/homepage/Volcano2.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about-us has-border" id="about">
+          <h2>ABOUT US</h2>
+          <p>
+            TALGEST aims to showcase multimedia content that will help in
+            disaster preparedness and bringing awareness to the volcanic
+            phenomenon that happens in the country.
+          </p>
+          <a class="button" href="./pages/about/about.html">
+            <span>about us</span>
+          </a>
+        </div>
+        <div class="section volcanoes center-align has-border" id="volcanoes">
+          <h2>VOLCANOES</h2>
+          <p>Features profiles of the 5 most active philippine volcanoes!</p>
+          <div>
+            <ul class="volcanoes-list">
+              <li>
+                <a href="./pages/volcanoes/bulusan.html">
+                  <div class="image-container volcano-image">
+                    <img src="./assets/images/homepage/Bulusan.png" />
+                  </div>
+                  Bulusan
+                </a>
+              </li>
+              <li>
+                <a href="./pages/volcanoes/kanlaon.html">
+                  <div class="image-container volcano-image">
+                    <img src="./assets/images/homepage/Kanlaon.png" />
+                  </div>
+                  Kanlaon
+                </a>
+              </li>
+              <li>
+                <a href="./pages/volcanoes/pinatubo.html">
+                  <div class="image-container volcano-image">
+                    <img src="./assets/images/homepage/Pinatubo.png" />
+                  </div>
+                  Pinatubo
+                </a>
+              </li>
+              <li>
+                <a href="./pages/volcanoes/mayon.html">
+                  <div class="image-container volcano-image">
+                    <img src="./assets/images/homepage/Mayon.png" />
+                  </div>
+                  Mayon
+                </a>
+              </li>
+              <li>
+                <a href="./pages/volcanoes/taal.html">
+                  <div class="image-container volcano-image">
+                    <img src="./assets/images/homepage/Taal.png" />
+                  </div>
+                  Taal
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section hazards" id="hazards">
+          <div class="title-wrapper">
+            <h2>HAZARDS</h2>
+            <p>
+              Select a topic for videos about volcanic hazards and safety
+              informaton
+            </p>
+            <div class="image-container right-small-image">
+              <img src="./assets/images/homepage/HazardFrontPageIllust.png" />
+            </div>
+          </div>
+          <div class="content-wrapper">
+            <div>
+              <h3>Volcanic Hazards</h3>
+              <p>
+                Lateral Blasts and Lava Flows, Ashfalls, Ballistic Projectiles,
+                and Volcanic Gas, Pyroclastic Density Currents and Lahar, Debris
+                Avalanche (Sector Collapse) and Fissuring, Volcanic Tsunami
+              </p>
+              <a class="button" href="./pages/hazards/volcanic-hazard.html">
+                <span>learn more</span>
+              </a>
+            </div>
+            <div>
+              <h3>Safety Information</h3>
+              <p>
+                Volcano Alert Status, What to do when an eruption is imminent?,
+                Evacuation Ready Bags, Where to go during a volcanic event?,
+                First aid kits and how to treat burn and trauma related injuries
+              </p>
+              <a class="button" href="./pages/hazards/safety-info.html">
+                <span>learn more</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="section cultures right-align grey-bg with-overflow-image"
+          id="cultures"
+        >
+          <h2>CULTURES</h2>
+          <p>
+            Features legends about
+            <br />
+            volcanoes.
+          </p>
+          <a class="button" href="./pages/cultures/urban-legends.html">
+            <span>urban legends</span>
+          </a>
+          <div class="image-container left-overflow-image">
+            <img src="./assets/images/homepage/CultureFrontPage.png" />
+          </div>
+        </div>
+        <div class="section cultures grey-bg with-overflow-image" id="quizzes">
+          <h2>QUIZZES</h2>
+          <p>
+            Test your knowledge!
+            <br />
+            Answer our quizzes regarding the site's content.
+          </p>
+          <div class="button-group">
+            <a class="button" href="./pages/quizzes/volcanic-hazard.html">
+              <span>volcanic hazards</span>
+            </a>
+            <a class="button" href="./pages/quizzes/safety-info.html">
+              <span>safety information</span>
+            </a>
+          </div>
+          <div class="image-container right-overflow-image">
+            <img src="./assets/images/homepage/QuizzesFrontPage.png" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- home section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="./assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

@@ -1,0 +1,47 @@
+.right-small-image {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 15%;
+}
+
+.left-overflow-image,
+.right-overflow-image {
+  width: 30%;
+  top: 10px;
+}
+
+@media only screen and (min-width: 544px) {
+  .right-small-image {
+    top: 20px;
+    right: 25px;
+  }
+}
+
+@media only screen and (min-width: 915px) {
+  .right-small-image,
+  .right-overflow-image,
+  .left-overflow-image {
+    position: absolute;
+    top: 35px;
+  }
+
+  .left-overflow-image,
+  .right-overflow-image {
+    height: 354px;
+    width: auto;
+  }
+
+  .right-small-image,
+  .right-overflow-image {
+    right: 70px;
+  }
+
+  .left-overflow-image {
+    left: 70px;
+  }
+
+  .right-small-image {
+    width: 11%;
+  }
+}
