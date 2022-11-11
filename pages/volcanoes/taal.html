@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>Taal</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -13,124 +13,274 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../../assets/css/app.css" />
+    <link rel="stylesheet" href="../../assets/css/app.css" />
 
-    <!-- custom js file link  -->
-    <script type="module" src="../../../assets/js/app.js"></script>
-    <script src="../volcanoes.js"></script>
+    <script type="module" src="../../assets/js/app.js"></script>
+    <script src="./volcanoes.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../volcanoes.html">
-            
-            <span>volcanoes</span>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
           </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+        <ul class="nav-list toggle">
+          <li class="nav-item">
+            <a href="#volcanoes">
+              <span>volcanoes</span>
+            </a>
 
-        <li class="nav-item">
-          <a href="../../hazards/hazards.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
 
-    <!-- volcanoes section starts  -->
+    <!-- home section starts  -->
 
-    <section class="main volcanoes taal">
-      <p>volcanoes taal</p>
+    <section class="main home">
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container longer-text">
+            <div class="title-container">
+              <h3 class="eyebrow">A stratovolcano in Batangas Province</h3>
+              <h2 class="title">Taal Volcano</h2>
+            </div>
+            <a
+              class="button white"
+              href="https://volcano.si.edu/volcano.cfm?vn=273070"
+              target="_blank"
+            >
+              <span>weekly reports</span>
+            </a>
+          </div>
+          <div class="image-container hero-image volcano">
+            <img src="../../assets/images/volcanoes/taal.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about-us has-border">
+          <h2>SUMMARY</h2>
+          <p class="page-first-content">
+            Taal is one of the most active volcanoes in the Philippines and has
+            made some of its most devastating historical eruptions. Though not
+            topographically prominent, its prehistorical eruptions have greatly
+            changed the landscape of SW Luzon. The 15 x 20 km Talisay (Taal)
+            caldera is largely filled by Lake Taal, whose 267 km2 surface lies
+            only 3 m above sea level.
+          </p>
+          <div class="summary-image">
+            <div class="image-container">
+              <img src="../../assets/images/volcanoes/volcano-clipart.png" />
+            </div>
+            <p>
+              The maximum depth of the lake is 160m, and some eruptive centers
+              lie submerged beneath the lake. The 5km-wide Volcano Island in
+              north-central Lake Taal is the location of all observed eruptions.
+              The island is consist of coalescing small stratovolcanoes, tuff
+              rings, and scoria cones. Intense pyroclastic flows and surges have
+              caused many fatalities.
+            </p>
+          </div>
+        </div>
+        <div class="section about-us has-border">
+          <h2>HISTORY</h2>
+          <p>
+            <strong>1911 Eruption</strong>
+            <br />
+            The eruption of the Taal volcano in 1911 destroyed most life on the
+            island and caused damage to the area that is surrounding the
+            volcano. 1335 people were killed by the eruption.
+          </p>
+          <p>
+            <strong>1965 - 1977 Eruption</strong>
+            <br />
+            A phreatomagmatic eruption of Taal volcano between September 28,
+            1965, to September 30, 1965. The eruption enveloped an area of
+            approximately 60 square kilometers with ash more than 25cm thick.
+            The 1965 eruption was the first since 1749 to be located on the
+            flanks of the island. The eruption caused a base surge which caused
+            loss of life and damage from the created tsunami. The base surge was
+            initiated by water entering the magma chamber. Ash clouds rose 20km
+            high during the eruption and ash fell 80km away. Lapilli, a rock
+            fragment from a volcano fell 9km downwind from the explosion crater.
+            Ash and steam erupted on November 9, 1977. Ash and steam erupted on
+            9 November 1977.
+          </p>
+          <p>
+            <strong>2010 - 2012 Unrest</strong>
+            <br />
+            On April 26, 2010, volcanic earthquakes increased. The composition
+            of Main Crater Lake water has shown the above-normal values of
+            Magnesium Chloride, Sulfate Chloride, and Total Dissolved Solids.
+            There has been ground steaming accompanied by hissing sounds on the
+            northern and northeast sides of the main crater. PHIVOLCS has raised
+            the status of the volcano to Alert Level 2, which indicates the
+            volcano is undergoing magmatic intrusion which may lead to an
+            eruption. The main crater has been marked as off-limits due to the
+            risk of an eruption. This Unrest state lasted until 2012 as there
+            was a large increase in seismic activity at Taal Volcano on November
+            22, 2012, to November 23, 2012.
+          </p>
+          <p>
+            <strong>2020 Eruption</strong>
+            <br />
+            A huge eruption began at Taal volcano, on January 12, 2020. Ash
+            emissions reached 55,000ft altitude. Reports of ash falling at
+            Alabang, 45km north of the volcano and Metro Manila. Flights were
+            canceled at Ninoy Aquino International Airport, Manilla due to ash.
+            Taal volcano progressed to a magmatic eruption on January 13, 2020.
+            On the evening of January 13, 2020, 500m high lava fountains
+            occurred at the volcano.
+          </p>
+        </div>
+        <div class="section volcanoes center-align" id="volcanoes">
+          <ul class="volcanoes-list">
+            <li>
+              <a href="./bulusan.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Bulusan.png" />
+                </div>
+                Bulusan
+              </a>
+            </li>
+            <li>
+              <a href="./kanlaon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Kanlaon.png" />
+                </div>
+                Kanlaon
+              </a>
+            </li>
+            <li>
+              <a href="./pinatubo.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Pinatubo.png" />
+                </div>
+                Pinatubo
+              </a>
+            </li>
+            <li>
+              <a href="./mayon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Mayon.png" />
+                </div>
+                Mayon
+              </a>
+            </li>
+            <li>
+              <a href="./taal.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Taal.png" />
+                </div>
+                Taal
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- volcanoes section ends -->
+    <!-- home section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

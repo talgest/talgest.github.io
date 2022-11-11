@@ -25,9 +25,17 @@
   text-decoration: underline;
 }
 
+.volcano-image {
+  width: 60%;
+}
+
 @media only screen and (min-width: 915px) {
   .volcanoes-list {
     flex-direction: row;
     align-items: flex-end;
+  }
+
+  .volcano-image {
+    width: auto;
   }
 }

@@ -13,7 +13,15 @@
   src: local('Roboto Bold'), url('Roboto-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Ubuntu Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu Bold'), url('Ubuntu-Bold.woff') format('woff');
+}
+
 :root {
-  --heading: 'Roboto Bold';
-  --body: 'Ubuntu';
+  --heading: 'Roboto Bold', Arial, sans-serif;
+  --body: 'Ubuntu', Times, serif;
+  --body-strong: 'Ubuntu Bold', Times, serif;
 }

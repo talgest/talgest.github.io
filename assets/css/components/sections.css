@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .section.center-align {
@@ -9,19 +9,10 @@
 
 .section.center-align {
   text-align: center;
-}
-
-.section.right-align {
-  text-align: right;
 }
 
 .section.center-align p {
   margin: 0 auto;
-}
-
-.section.right-align p,
-.section.right-align .button {
-  margin-left: auto;
 }
 
 .section.has-border {
@@ -41,9 +32,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .section.grey-bg:last-child {
@@ -66,6 +58,7 @@
 
 .section .title-wrapper p {
   margin-bottom: 0;
+  max-width: 75%;
 }
 
 .section .content-wrapper {
@@ -88,7 +81,7 @@
     padding-bottom: 0;
   }
 
-  .section p:nth-child(2) {
+  .page-first-content {
     max-width: 700px;
   }
 
@@ -98,17 +91,33 @@
     margin-bottom: 20px;
   }
 
-  .section.grey-bg:last-child {
-    margin-bottom: 0;
+  .section.grey-bg.right-align {
+    align-items: flex-end;
+    text-align: right;
   }
 
-  .section .title-wrapper p {
-    max-width: 75%;
+  .section.grey-bg.left-align {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .section.grey-bg:last-child {
+    margin-bottom: 0;
   }
 
   .section .content-wrapper {
     flex-direction: row;
   }
+
+  .section.right-align {
+    text-align: right;
+  }
+
+  .section.right-align p,
+  .section.right-align .button {
+    margin-left: auto;
+  }
+
 }
 
 @media only screen and (min-width: 915px) {
@@ -116,8 +125,12 @@
     padding: 35px 70px;
   }
 
-  .section:first-child p:nth-child(2) {
+  .page-first-content {
     max-width: 58%;
+  }
+
+  .summary-image p {
+    max-width: unset;
   }
 
   .section:first-child {
@@ -171,13 +184,13 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .section:first-child p:nth-child(2) {
+  .page-first-content {
     max-width: 65%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .section:first-child p:nth-child(2) {
+  .page-first-content {
     max-width: 700px;
   }
 }

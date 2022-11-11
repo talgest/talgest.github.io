@@ -9,7 +9,8 @@
 }
 
 .navbar a,
-.nav-list a {
+.nav-list a,
+.nav-list span {
   color: var(--blue-color);
   text-decoration: none;
   text-transform: uppercase;
@@ -23,6 +24,11 @@
   justify-content: space-between;
 }
 
+.navbar-wrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -33,7 +39,7 @@
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-end;
   margin: 0;
@@ -42,6 +48,18 @@
   width: 100%;
   height: 100px;
   animation: dropFadeInDown 300ms;
+}
+
+.nav-list.toggle.active {
+  display: block;
+  position: absolute;
+  top: 51px;
+  left: 0;
+}
+
+.nav-list .nav-item {
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--blue-color);
 }
 
 .nav-marker {
@@ -72,42 +90,144 @@
   display: none;
 }
 
-.nav-item a span {
+.nav-item span,
+.sub-nav-item a {
   font-family: var(--heading);
   font-size: 0.75rem;
 }
 
-.nav-item {
+.nav-item,
+.sub-nav {
   list-style: none;
   position: relative;
 }
 
-.nav-item > a {
+.sub-nav {
+  background-color: var(--white-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sub-nav-item::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: var(--blue-color);
+}
+
+.sub-nav-item:hover::before {
+  width: 26px;
+}
+
+.sub-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.sub-nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.nav-item > a,
+.nav-item > span {
   display: flex;
   align-items: center;
   padding: 16px;
-  height: 100px;
+  height: 50px;
   box-sizing: border-box;
-  transition: color 0.25s ease;
+  transition: color 0.5s ease;
 }
 
-.nav-item.active a {
+.nav-item > span {
+  background-color: var(--blue-color);
   color: var(--white-color);
 }
 
-.nav-list.desktop {
-  display: none;
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-toggle {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  pointer-events: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: var(--blue-color);
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 0.3s ease-in-out;
+}
+
+span::before {
+  top: -10px;
+}
+
+span::after {
+  bottom: -10px;
+}
+
+.nav-toggle.active span {
+  background-color: transparent;
+}
+
+.nav-toggle.active span::before,
+.nav-toggle.active span::after {
+  top: 0;
+}
+
+.nav-toggle.active span::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active span::after {
+  transform: rotate(-45deg);
 }
 
 @media only screen and (min-width: 544px) {
-  .nav-item a span {
+  .nav-item a span,
+  .nav-item span,
+  .sub-nav-item a {
     font-size: 1rem;
   }
 }
 
 @media only screen and (min-width: 915px) {
+  .navbar-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .navbar-wrapper:first-child {
     border-bottom: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    animation: none;
   }
 
   .nav-list.mobile {
@@ -126,10 +246,6 @@
     display: block;
   }
 
-  .nav-list {
-    animation: none;
-  }
-
   .nav-image {
     width: 153px;
     height: 100px;
@@ -140,16 +256,103 @@
     margin-top: -5px;
   }
 
-  .nav-item a {
-    padding: 26px 10px;
+  .nav-item {
+    display: flex;
+    align-items: center;
   }
 
-  .nav-item a span {
+  .nav-item,
+  .nav-item > span {
+    height: 100%;
+  }
+
+  .nav-item a {
+    padding: 26px 10px;
+    height: 100px;
+  }
+
+  .nav-item a span,
+  .nav-item span,
+  .sub-nav-item a {
     font-size: 1.25rem;
+  }
+
+  .nav-item > span {
+    background-color: transparent;
+    color: var(--blue-color);
+  }
+
+  .nav-list .nav-item {
+    background-color: transparent;
+    border-bottom: 0;
+  }
+
+  .nav-item.active a span,
+  .nav-item.active span,
+  .nav-item a.active span {
+    color: var(--white-color);
   }
 
   .nav-item.desktop {
     display: flex;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .sub-nav {
+    display: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    border: 1px solid var(--blue-color);
+  }
+
+  .sub-nav-item {
+    position: relative;
+    height: 44px;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid var(--blue-color);
+  }
+
+  .sub-nav-item:last-child {
+    border-bottom: 0;
+  }
+
+  .sub-nav-item::before {
+    width: 26px;
+  }
+
+  .sub-nav-item a {
+    height: auto;
+    padding: 10px 15px 10px 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .sub-nav-item:hover::before {
+    width: 26px;
+    background-color: var(--white-color);
+  }
+
+  .sub-nav-item:hover {
+    background-color: var(--blue-color);
+  }
+
+  .sub-nav-item:hover a {
+    color: var(--white-color);
+  }
+
+  .nav-item:hover .sub-nav {
+    display: block;
+    animation: dropFadeInUp 300ms;
   }
 }
 

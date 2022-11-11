@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>Mt. Pinatubo</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -13,124 +13,297 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../../assets/css/app.css" />
-    
-    <!-- custom js file link  -->
-    <script type="module" src="../../../assets/js/app.js"></script>
-    <script src="../volcanoes.js"></script>
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+
+    <script type="module" src="../../assets/js/app.js"></script>
+    <script src="./volcanoes.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../volcanoes.html">
-            
-            <span>volcanoes</span>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
           </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+        <ul class="nav-list toggle">
+          <li class="nav-item">
+            <a href="#volcanoes">
+              <span>volcanoes</span>
+            </a>
 
-        <li class="nav-item">
-          <a href="../../hazards/hazards.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
 
-    <!-- volcanoes section starts  -->
+    <!-- home section starts  -->
 
-    <section class="main volcanoes pinatubo">
-      <p>volcanoes pinatubo</p>
+    <section class="main home">
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container longer-text">
+            <div class="title-container">
+              <h3 class="eyebrow">A stratovolcano in Zambales Province</h3>
+              <h2 class="title">Mount Pinatubo</h2>
+            </div>
+            <a
+              class="button white"
+              href="https://volcano.si.edu/volcano.cfm?vn=273083&vtab=Weekly"
+              target="_blank"
+            >
+              <span>weekly reports</span>
+            </a>
+          </div>
+          <div class="image-container hero-image volcano">
+            <img src="../../assets/images/volcanoes/pinatubo.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about-us has-border">
+          <h2>SUMMARY</h2>
+          <p class="page-first-content">
+            Mount Pinatubo, a volcano in western Luzon, Philippines that erupted
+            in 1991 for the first time in 600 years and caused widespread
+            devastation. Mount Pinatubo is located in the provinces of Zambales
+            and rose to a height of about 4,800 feet prior to its eruption.
+            Before 1991 Pinatubo had a height of 1745 m, and was only 200m
+            higher than nearby mountains which obscured it from view. The
+            surrounding mountains are remains of an older Mt Pinatubo.
+          </p>
+          <div class="summary-image">
+            <div class="image-container">
+              <img src="../../assets/images/volcanoes/volcano-clipart.png" />
+            </div>
+            <p>
+              The largest eruption at Mt Pinatubo volcano happened 35,000 years
+              ago, and produced pyroclastic flow deposits up to 100m thick on
+              all sides of the volcano. The Sacobia eruption period 17,000 years
+              ago produced two debris flow deposits which are visible on the
+              north bank of the Sacobia River.
+            </p>
+          </div>
+        </div>
+        <div class="section about-us has-border">
+          <h2>HISTORY</h2>
+          <p>
+            <strong>Eruptions of Mount Pinatubo</strong>
+            <br />
+            The largest eruption at Mt Pinatubo volcano occurred 35,000 years
+            ago, and produced pyroclastic flow deposits up to 100 m thick on all
+            sides of the volcano. The Sacobia eruption period 17,000 years ago
+            produced two debris flow deposits which are visible on the north
+            bank of the Sacobia River.
+          </p>
+          <br />
+          <p>
+            <strong>The 1991 Eruptions</strong>
+          </p>
+          <p>
+            <strong>June 7, 1991</strong>
+            <br />
+            An ash eruption sent a cloud 8km high. Alert level 4 was issued
+            stating an eruption could happen within 24 hours. The danger zone
+            extended to a 20km of radius. Lava reached the surface and formed a
+            small dome at 1km northwest of the main crater.
+          </p>
+          <p>
+            A short amount of ash emission began at Kanlaon volcano in January
+            21, 2005. The emissions reached 500m above the crater. The eruption
+            was phreatic. On March 20, 2005, ashfall was reported in La Carlota
+            City of Negros Occidental in 5 km west of the volcano. From March
+            24, 2005, to April 4, 2005, occasional ash emissions reached 1 km
+            above the volcano. Ashfall was reported in different towns.
+            Eruptions began in June 3, 2006, and 23 ash eruptions happened from
+            July 25, 2006. The eruptions were phreatic and emitted ash and steam
+            around 2km above the crater. No significant seismic activity
+            occurred before or after the ash emissions, indicating the
+            explosions were near surface hydrothermal events.
+          </p>
+          <p>
+            <strong>9th June 1991</strong>
+            <br />
+            Sulfur dioxide began escaping again from the volcano. A large
+            eruption of ash. People evacuated from a 20 km radius. 10th June
+            1991 Evacuations began at Clark Air Base around 14,400 people.
+          </p>
+          <p>
+            <strong>June 12, 1991</strong>
+            <br />
+            Ash eruptions to 20km above the volcano on Philippine Independence
+            Day.
+          </p>
+          <p>
+            <strong>June 13, 1991</strong>
+            <br />
+            Ash eruption to 25km high followed by 28 hours without an explosion.
+            Earthquakes continued.
+          </p>
+          <p>
+            <strong>June 14, 1991</strong>
+            <br />
+            An intense explosion at 1:09 pm. Eruption column to 21km in 15
+            minutes. Nuee ardentes devastated the main valleys radiating from Mt
+            Pinatubo.
+          </p>
+          <p>
+            <strong>June 15, 1991</strong>
+            <br />
+            Typhoon Yunya passed 100km northeast of Pinatubo. Mudflows start
+            pouring down the mountain at 30km/hr. At 3:39 pm the main eruption
+            began. In 9 hours, 90% of the material for the eruption was released
+            from the volcano. Cauliflower columns of ash, gas, and steam rose
+            34km high and traveled 400km. At 4:30 pm the summit of Pinatubo
+            began to sink. The evacuation area was increased to a 40km radius.
+            The eruption stopped at 10:34 pm.
+          </p>
+        </div>
+        <div class="section volcanoes center-align" id="volcanoes">
+          <ul class="volcanoes-list">
+            <li>
+              <a href="./bulusan.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Bulusan.png" />
+                </div>
+                Bulusan
+              </a>
+            </li>
+            <li>
+              <a href="./kanlaon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Kanlaon.png" />
+                </div>
+                Kanlaon
+              </a>
+            </li>
+            <li>
+              <a href="./pinatubo.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Pinatubo.png" />
+                </div>
+                Pinatubo
+              </a>
+            </li>
+            <li>
+              <a href="./mayon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Mayon.png" />
+                </div>
+                Mayon
+              </a>
+            </li>
+            <li>
+              <a href="./taal.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Taal.png" />
+                </div>
+                Taal
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- volcanoes section ends -->
+    <!-- home section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

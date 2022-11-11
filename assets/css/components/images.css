@@ -7,14 +7,61 @@
 
 .left-overflow-image,
 .right-overflow-image {
-  width: 30%;
-  top: 10px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.summary-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.summary-image .image-container {
+  width: 50%;
+}
+
+.summary-image .image-container img {
+  height: auto;
+}
+
+.summary-image > * {
+  flex: 1;
+}
+
+.summary-image p {
+  width: fit-content;
 }
 
 @media only screen and (min-width: 544px) {
-  .right-small-image {
+  .right-small-image,
+  .right-overflow-image,
+  .left-overflow-image {
     top: 20px;
+  }
+
+  .right-overflow-image,
+  .left-overflow-image {
+    position: absolute;
+    width: 170px;
+  }
+
+  .right-small-image,
+  .right-overflow-image {
     right: 25px;
+  }
+
+  .left-overflow-image {
+    left: 25px;
+  }
+
+  .summary-image {
+    flex-direction: row;
+  }
+
+  .summary-image p {
+    max-width: 50%;
   }
 }
 
@@ -22,7 +69,6 @@
   .right-small-image,
   .right-overflow-image,
   .left-overflow-image {
-    position: absolute;
     top: 35px;
   }
 
@@ -43,5 +89,18 @@
 
   .right-small-image {
     width: 11%;
+  }
+
+  .summary-image > * {
+    flex: unset;
+  }
+
+  .summary-image .image-container {
+    width: 245px;
+    margin-top: -20px;
+  }
+
+  .summary-image p {
+    max-width: 845px;
   }
 }
