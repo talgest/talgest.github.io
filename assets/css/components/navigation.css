@@ -1,3 +1,4 @@
+/* navigation styling */
 .navbar,
 .nav-branding,
 .navbar-wrapper {
@@ -18,10 +19,6 @@
 
 .navbar-wrapper:first-child {
   border-bottom: 1px solid var(--blue-color);
-}
-
-.navbar-wrapper.mobile .nav-list {
-  justify-content: space-between;
 }
 
 .navbar-wrapper {
@@ -84,10 +81,6 @@
 
 .nav-image img {
   margin-top: -2px;
-}
-
-.nav-item.desktop {
-  display: none;
 }
 
 .nav-item span,
@@ -230,14 +223,6 @@ span::after {
     animation: none;
   }
 
-  .nav-list.mobile {
-    display: none;
-  }
-
-  .nav-list.desktop {
-    display: flex;
-  }
-
   .nav-branding {
     width: auto;
   }
@@ -271,6 +256,10 @@ span::after {
     height: 100px;
   }
 
+  .nav-item a:hover {
+    text-decoration: none;
+  }
+
   .nav-item a span,
   .nav-item span,
   .sub-nav-item a {
@@ -293,10 +282,6 @@ span::after {
     color: var(--white-color);
   }
 
-  .nav-item.desktop {
-    display: flex;
-  }
-
   .nav-mobile {
     display: none;
   }
@@ -317,6 +302,7 @@ span::after {
     padding: 10px 20px;
     margin: 0;
     border-bottom: 1px solid var(--blue-color);
+    transition: all 0.2s ease;
   }
 
   .sub-nav-item:last-child {
@@ -356,6 +342,7 @@ span::after {
   }
 }
 
+/* navigation animation */
 @keyframes dropFadeInDown {
   0% {
     opacity: 0;

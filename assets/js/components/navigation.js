@@ -49,5 +49,5 @@ export const navigation = () => {
   window.addEventListener('resize', function() {
     mobileNavToggle.classList.remove('active');
     navContainer.classList.remove('active');
-  }, true);
+  });
 };

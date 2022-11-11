@@ -1,0 +1,6 @@
+/* styling for texts with
+read more functionality */
+.read-more-content.hide,
+.dots.hide {
+  display: none;
+}

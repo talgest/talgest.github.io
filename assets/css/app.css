@@ -15,12 +15,10 @@
 @import './components/images.css';
 @import './components/buttons.css';
 @import './components/volcanoes-list.css';
+@import './components/read-more.css';
 
 /* page stylings */
 @import '../../assets/css/page.css';
-@import '../../pages/home/home.css';
 @import '../../pages/about/about.css';
-@import '../../pages/cultures/cultures.css';
 @import '../../pages/hazards/hazards.css';
 @import '../../pages/quizzes/quizzes.css';
-@import '../../pages/volcanoes/volcanoes.css';

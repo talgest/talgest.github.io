@@ -1,22 +1,7 @@
+/* page sections default styling */
 .section {
   position: relative;
   padding: 15px;
-}
-
-.section.center-align {
-  text-align: center;
-}
-
-.section.center-align {
-  text-align: center;
-}
-
-.section.center-align p {
-  margin: 0 auto;
-}
-
-.section.has-border {
-  border-bottom: 1px solid var(--blue-color);
 }
 
 .section:first-child {
@@ -25,21 +10,6 @@
 
 .section:last-child {
   padding-bottom: 0;
-}
-
-.section.grey-bg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-
-.section.grey-bg:last-child {
-  margin-bottom: 0;
 }
 
 .section p,
@@ -68,6 +38,53 @@
   gap: 16px;
 }
 
+/* section with center-aligned content */
+.section.center-align {
+  text-align: center;
+}
+
+.section.center-align {
+  text-align: center;
+}
+
+.section.center-align p {
+  margin: 0 auto;
+}
+
+.section.left-align,
+.section.right-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* section with border */
+.section.has-border {
+  border-bottom: 1px solid var(--blue-color);
+}
+
+/* section with gray bg */
+.section.grey-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.section.grey-bg:last-child {
+  margin-bottom: 0;
+}
+
+.section.big-image {
+  gap: 16px;
+}
+
 @media only screen and (min-width: 544px) {
   .section {
     padding: 20px 25px;
@@ -81,24 +98,10 @@
     padding-bottom: 0;
   }
 
-  .page-first-content {
-    max-width: 700px;
-  }
-
   .section.grey-bg {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-  }
-
-  .section.grey-bg.right-align {
-    align-items: flex-end;
-    text-align: right;
-  }
-
-  .section.grey-bg.left-align {
-    align-items: flex-start;
-    text-align: left;
   }
 
   .section.grey-bg:last-child {
@@ -107,6 +110,22 @@
 
   .section .content-wrapper {
     flex-direction: row;
+  }
+
+  .section.left-align,
+  .section.right-align {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section.left-align {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .section.right-align {
+    align-items: flex-end;
+    text-align: right;
   }
 
   .section.right-align {
@@ -118,19 +137,23 @@
     margin-left: auto;
   }
 
+  .section.big-image {
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* the first content just below the hero */
+  .page-first-content {
+    max-width: 700px;
+  }
 }
 
 @media only screen and (min-width: 915px) {
   .section {
     padding: 35px 70px;
-  }
-
-  .page-first-content {
-    max-width: 58%;
-  }
-
-  .summary-image p {
-    max-width: unset;
   }
 
   .section:first-child {
@@ -151,6 +174,10 @@
     margin-bottom: 0;
   }
 
+  .section .title-wrapper {
+    margin-bottom: 35px;
+  }  
+
   .section.grey-bg {
     display: block;
     padding-top: 35px;
@@ -158,12 +185,16 @@
     margin-bottom: 35px;
   }
 
-  .section .title-wrapper {
-    margin-bottom: 35px;
-  }  
-
   .section.grey-bg:last-child {
     margin-bottom: 0;
+  }
+
+  .section.grey-bg.with-overflow-image {
+    margin-bottom: 127px;
+  }
+
+  .section.grey-bg.with-overflow-image:last-child {
+    margin-bottom: 92px;
   }
 
   .section .content-wrapper p {
@@ -174,18 +205,24 @@
     max-width: unset;
   }
 
-  .section.grey-bg.with-overflow-image {
-    margin-bottom: 127px;
+  .section.big-image {
+    gap: 60px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
   }
 
-  .section.grey-bg.with-overflow-image:last-child {
-    margin-bottom: 92px;
+  .section.big-image .wrapper {
+    width: 60%;
   }
-}
 
-@media only screen and (min-width: 1024px) {
   .page-first-content {
-    max-width: 65%;
+    max-width: unset;
+  }
+
+  .page-first-content.homepage {
+    max-width: 60%;
   }
 }
 
