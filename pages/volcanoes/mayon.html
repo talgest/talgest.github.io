@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>Mt. Mayon</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -13,124 +13,290 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../../assets/css/app.css" />
-    
-    <!-- custom js file link  -->
-    <script type="module" src="../../../assets/js/app.js"></script>
-    <script src="../volcanoes.js"></script>
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+
+    <script type="module" src="../../assets/js/app.js"></script>
+    <script src="./volcanoes.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../volcanoes.html">
-            
-            <span>volcanoes</span>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
           </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+        <ul class="nav-list toggle">
+          <li class="nav-item">
+            <a href="#volcanoes">
+              <span>volcanoes</span>
+            </a>
 
-        <li class="nav-item">
-          <a href="../../hazards/hazards.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
 
-    <!-- volcanoes section starts  -->
+    <!-- home section starts  -->
 
-    <section class="main volcanoes mayon">
-      <p>volcanoes mayon</p>
+    <section class="main home">
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container longer-text">
+            <div class="title-container">
+              <h3 class="eyebrow">A stratovolcano in Albay Province</h3>
+              <h2 class="title">Mayon Volcano</h2>
+            </div>
+            <a
+              class="button white"
+              href="https://volcano.si.edu/volcano.cfm?vn=273030"
+              target="_blank"
+            >
+              <span>weekly reports</span>
+            </a>
+          </div>
+          <div class="image-container hero-image volcano">
+            <img src="../../assets/images/volcanoes/mayon.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about-us has-border">
+          <h2>SUMMARY</h2>
+          <p class="page-first-content">
+            Mayon Volcano, a symmetrical volcano that rises above the Albay Gulf
+            NW of Legazpi City, it the most active volcano in the Philippines.
+            The steep upper slopes are capped by a small summit crater. Recorded
+            eruptions since 1616 CE range from Strombolian to basaltic Plinian,
+            with cyclical activity beginning with basaltic eruptions, followed
+            by longer-term andesitic lava flows.
+          </p>
+          <div class="summary-image">
+            <div class="image-container">
+              <img src="../../assets/images/volcanoes/volcano-clipart.png" />
+            </div>
+            <p>
+              A popular place to camp and climb, the volcano is the center of
+              Mayon Volcano National Park ranging about 21 square miles. There
+              are large abaca plantations on its lower slopes. There have been
+              more than 30 eruptions recorded since 1616. An eruption in 1993
+              caused 79 deaths. Successive eruptions in 2000, 2006, 2009, 2014,
+              and 2018 forced tens of thousands of people in nearby villages to
+              evacuate.
+            </p>
+          </div>
+        </div>
+        <div class="section about-us has-border">
+          <h2>HISTORY</h2>
+          <p>
+            <strong>1814 Eruption</strong>
+            <br />
+            The eruption of Mayon Volcano in February 1, 1814, was the most
+            massive historical eruption at this volcano. The six-hour eruption
+            killed 1200 people. Fatalities were caused by pyroclastic density
+            currents, port eruption lahars, and fires set alight by hot tephra.
+          </p>
+          <p>
+            <strong>1897 Eruption</strong>
+            <br />
+            A dreadful eruption began at Mayon volcano on June 23, 1897. Lava
+            flowed down the side of the volcano for seven miles towards the
+            east. Volcanic ash fell on the surrounding country for 100 miles to
+            the east and 75 miles to the west. The eruption finished on June 30,
+            1897, and killed around 400 people.
+          </p>
+          <p>
+            <strong>1968 Eruptions</strong>
+            <br />
+            An eruption began at Mayon volcano on April 21, 1968. By May 15,
+            1968, more than 100 explosions had happened, 6 people had been
+            killed, and roughly 100 square km had been covered by ashfall,
+            blocky ash flows, and a lava flow. Explosions from the summit crater
+            had been released in large quantities of ash and incandescent blocks
+            to a height of 600 m and ash plumes 10km high.
+          </p>
+          <p>
+            A short amount of ash emission began at Kanlaon volcano in January
+            21, 2005. The emissions reached 500m above the crater. The eruption
+            was phreatic. On March 20, 2005, ashfall was reported in La Carlota
+            City of Negros Occidental in 5 km west of the volcano. From March
+            24, 2005, to April 4, 2005, occasional ash emissions reached 1 km
+            above the volcano. Ashfall was reported in different towns.
+            Eruptions began in June 3, 2006, and 23 ash eruptions happened from
+            July 25, 2006. The eruptions were phreatic and emitted ash and steam
+            around 2km above the crater. No significant seismic activity
+            occurred before or after the ash emissions, indicating the
+            explosions were near surface hydrothermal events.
+          </p>
+          <p>
+            <strong>1978 - 1984 Eruption</strong>
+            <br />
+            An eruption began at Mayon volcano on May 7, 1978, and gradually
+            increased in intensity over time, reaching a maximum on 22nd May. A
+            lava flow merged from a breach in the summit's crater wall and
+            extended down the SW flank directly over the 1968 flow. On June 30,
+            1981, typhoon Daling triggered mudflows that killed 40 people,
+            injured 9, and left 7 missing. An eruption began on September 10,
+            1984, with lava spilling over the crater rim. Incandescent blocks
+            rolled 600m down the NW flank, destroying trees. On September 12,
+            1984, eruptions became vulcanian in character with pyroclastic flows
+            extending several kilometers from the summit, and ash emissions
+            rising to a height of 15km.
+          </p>
+          <p>
+            <strong>2006 Eruption</strong>
+            <br />
+            Eruptions of the Mayon volcano in August 2006 resulted in the
+            evacuation of 48,000 people, and 1266 people were killed in December
+            2006 when heavy rain from typhoon Durian caused landslides and
+            floods at the base of the volcano.
+          </p>
+        </div>
+        <div class="section volcanoes center-align" id="volcanoes">
+          <ul class="volcanoes-list">
+            <li>
+              <a href="./bulusan.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Bulusan.png" />
+                </div>
+                Bulusan
+              </a>
+            </li>
+            <li>
+              <a href="./kanlaon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Kanlaon.png" />
+                </div>
+                Kanlaon
+              </a>
+            </li>
+            <li>
+              <a href="./pinatubo.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Pinatubo.png" />
+                </div>
+                Pinatubo
+              </a>
+            </li>
+            <li>
+              <a href="./mayon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Mayon.png" />
+                </div>
+                Mayon
+              </a>
+            </li>
+            <li>
+              <a href="./taal.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Taal.png" />
+                </div>
+                Taal
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- volcanoes section ends -->
+    <!-- home section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

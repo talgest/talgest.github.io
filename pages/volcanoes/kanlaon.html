@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>Mt. Kanlaon</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -13,124 +13,293 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../../assets/css/app.css" />
-    
-    <!-- custom js file link  -->
-    <script type="module" src="../../../assets/js/app.js"></script>
-    <script src="../volcanoes.js"></script>
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+
+    <script type="module" src="../../assets/js/app.js"></script>
+    <script src="./volcanoes.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../volcanoes.html">
-            
-            <span>volcanoes</span>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
           </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+        <ul class="nav-list toggle">
+          <li class="nav-item">
+            <a href="#volcanoes">
+              <span>volcanoes</span>
+            </a>
 
-        <li class="nav-item">
-          <a href="../../hazards/hazards.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
 
-    <!-- volcanoes section starts  -->
+    <!-- home section starts  -->
 
-    <section class="main volcanoes kanlaon">
-      <p>volcanoes kanlaon</p>
+    <section class="main home">
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container longer-text">
+            <div class="title-container">
+              <h3 class="eyebrow">A stratovolcano in Negros Province</h3>
+              <h2 class="title">Kanlaon Volcano</h2>
+            </div>
+            <a
+              class="button white"
+              href="https://volcano.si.edu/volcano.cfm?vn=272020"
+              target="_blank"
+            >
+              <span>weekly reports</span>
+            </a>
+          </div>
+          <div class="image-container hero-image volcano">
+            <img src="../../assets/images/volcanoes/kanlaon.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about-us has-border">
+          <h2>SUMMARY</h2>
+          <p class="page-first-content">
+            Kanlaon volcano, also spelled Canlaon, is the most active volcanoe
+            of the central Philippines, forms the highest point on the island of
+            Negros. The massive 2435-m high stratovolcano is dotted with
+            fissure-controlled pyroclastic cones and craters, many of which are
+            filled by lakes. The summit of Canlaon contains a broad elongated
+            northern caldera with a crater lake and a smaller, but higher,
+            historically active crater to the south.
+          </p>
+          <div class="summary-image">
+            <div class="image-container">
+              <img src="../../assets/images/volcanoes/volcano-clipart.png" />
+            </div>
+            <p>
+              The largest debris avalanche known in the Philippines traveled
+              33km to the SW from Canlaon. Historical eruptions, recorded since
+              1866, have typically consisted of phreatic explosions of
+              small-to-moderate size that produce minor ashfalls near the
+              volcano.
+            </p>
+          </div>
+        </div>
+        <div class="section about-us has-border">
+          <h2>HISTORY</h2>
+          <p>
+            <strong>1986 - 1989 Eruptions</strong>
+            <br />
+            As emissions happened at Kanlaon volcano in June 1986. Last June 21,
+            1986 ash reached a height of 4000m above the summit combined with an
+            earthquake over 8km from the summit. A loud sound by the hazard
+            accompanied the ash ejection. The eruption of Kanlaon Volcano in
+            April 1987 was preceded by an increase in Sulphate concentration at
+            Mambukal 9.75 km N-NW of Kanlaon's summit A phreatic eruption
+            occurred at Bulusan Volcano on November 27, 1994, which ejected an
+            ash plume at 1.5km altitude.
+          </p>
+          <p>
+            A second ash explosion in December 3 deposited ashes 7km from the
+            volcano. A strong phreatic explosion on December 12, 1994, created a
+            3km high ash cloud and caused ashfall 16 km from the volcano. An
+            eruption in January 21, 1995, was accompanied by rumbling noises,
+            lightning flashes over the summit, and light ashfall at the San
+            Benon Observatory 5km SW. Ash emissions happened in June 1988.
+            Traces of ash fell in the village of Mananawin on the SE slope at
+            980m elevation. On June 27, 1988 ash emissions reached a height of
+            500m above the crater, and ash fell on the SW flank. Ash emissions
+            happened at Kanlaon volcano between October and December 1989. On
+            November 3, 1989, an eruption reached a height of 1200 m above the
+            crater. Ground inflation occurred a few hours before ash emissions.
+          </p>
+          <p>
+            <strong>1992 - 1996 Eruption</strong>
+            <br />
+            A minor earthquake, ash emission, and ashfall occurred at Kanlaon
+            volcano on June 10, 1992. Small phreatic explosions happened at
+            Kanlaon volcano on August 25, 1993, and September 3, 1993. An
+            explosion at Kanlaon volcano killed three people in August 10, 1996.
+            There were two climbing groups at the summit at the moment of the
+            explosion. Eighteen people were hospitalized due to injuries caused
+            mainly by falling ejecta.
+          </p>
+          <p>
+            <strong>2002 - 2006 Eruptions</strong>
+            <br />
+            An increase in seismicity during January 2002 was followed by a
+            small ash emission in November 28, 2002. On March 17, 2003, a
+            volcanic plume was observed at Kanlaon volcano. Small eruptions of
+            ash and steam reaching about 100m above the active crater were
+            observed in the first week of June. In June 8, 2003, an ashfall
+            occurred at Canlaon City. After July 23, 2003, weak steam emission
+            was noticed, and seismic activity returned to low levels.
+          </p>
+          <p>
+            A short amount of ash emission began at Kanlaon volcano in January
+            21, 2005. The emissions reached 500m above the crater. The eruption
+            was phreatic. On March 20, 2005, ashfall was reported in La Carlota
+            City of Negros Occidental in 5 km west of the volcano. From March
+            24, 2005, to April 4, 2005, occasional ash emissions reached 1 km
+            above the volcano. Ashfall was reported in different towns.
+            Eruptions began in June 3, 2006, and 23 ash eruptions happened from
+            July 25, 2006. The eruptions were phreatic and emitted ash and steam
+            around 2km above the crater. No significant seismic activity
+            occurred before or after the ash emissions, indicating the
+            explosions were near surface hydrothermal events.
+          </p>
+          <p>
+            <strong>2015 Eruptions</strong>
+            <br />
+            Ash emissions happened at Kanlaon volcano in December 2015. A 4 km
+            radius permanent exclusion zone exists around the volcano.
+          </p>
+        </div>
+        <div class="section volcanoes center-align" id="volcanoes">
+          <ul class="volcanoes-list">
+            <li>
+              <a href="./bulusan.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Bulusan.png" />
+                </div>
+                Bulusan
+              </a>
+            </li>
+            <li>
+              <a href="./kanlaon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Kanlaon.png" />
+                </div>
+                Kanlaon
+              </a>
+            </li>
+            <li>
+              <a href="./pinatubo.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Pinatubo.png" />
+                </div>
+                Pinatubo
+              </a>
+            </li>
+            <li>
+              <a href="./mayon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Mayon.png" />
+                </div>
+                Mayon
+              </a>
+            </li>
+            <li>
+              <a href="./taal.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Taal.png" />
+                </div>
+                Taal
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- volcanoes section ends -->
+    <!-- home section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

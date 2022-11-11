@@ -16,12 +16,16 @@
 }
 
 .main {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .main-content {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+strong {
+  font-family: var(--body-strong);
 }
 
 h2,
@@ -83,6 +87,10 @@ p {
   .hero-wrapper {
     padding-left: 70px;
     padding-right: 70px;
+  }
+
+  .main {
+    margin-top: 100px;
   }
 
   .main-content {

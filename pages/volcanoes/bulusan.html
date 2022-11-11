@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>Mt. Bulusan</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -13,124 +13,273 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../../assets/css/app.css" />
+    <link rel="stylesheet" href="../../assets/css/app.css" />
 
-    <!-- custom js file link  -->
-    <script type="module" src="../../../assets/js/app.js"></script>
-    <script src="../volcanoes.js"></script>
+    <script type="module" src="../../assets/js/app.js"></script>
+    <script src="./volcanoes.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../volcanoes.html">
-            
-            <span>volcanoes</span>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
           </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+        <ul class="nav-list toggle">
+          <li class="nav-item">
+            <a href="#volcanoes">
+              <span>volcanoes</span>
+            </a>
 
-        <li class="nav-item">
-          <a href="../../hazards/hazards.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/cultures/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./pages/quizzes/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./pages/about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
 
-    <!-- volcanoes section starts  -->
+    <!-- home section starts  -->
 
-    <section class="main volcanoes bulusan">
-      <p>volcanoes bulusan</p>
+    <section class="main home">
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container longer-text">
+            <div class="title-container">
+              <h3 class="eyebrow">A stratovolcano in Sorsogon Province</h3>
+              <h2 class="title">Bulusan Volcano</h2>
+            </div>
+            <a
+              class="button white"
+              href="https://volcano.si.edu/volcano.cfm?vn=273010&vtab=Weekly"
+              target="_blank"
+            >
+              <span>weekly reports</span>
+            </a>
+          </div>
+          <div class="image-container hero-image volcano">
+            <img src="../../assets/images/volcanoes/bulusan.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about-us has-border">
+          <h2>SUMMARY</h2>
+          <p class="page-first-content">
+            Bulusan is located in the most-Southern part of Luzon. It was
+            constructed along the rim of the 11 diameter km Irosin caldera,
+            which was formed about 36,000 years ago. It lies at the SE end of
+            the Bicol volcanic arc. A broad, flat moat is located below the
+            topographically prominent SW rim of the Irosin caldera; the NE rim
+            is buried by the andesitic complex.
+          </p>
+          <div class="summary-image">
+            <div class="image-container">
+              <img src="../../assets/images/volcanoes/volcano-clipart.png" />
+            </div>
+            <p>
+              Bulusan is bounded by several other large intracaldera lava domes
+              and cones, including the prominent Mount Jormajan lava dome on the
+              SW flank. The summit is desolated and contains a 300-m-wide,
+              50-m-deep crater. Three small craters are located on the SE flank.
+              Many moderate explosive eruptions have been recorded since the
+              mid-19th century.
+            </p>
+          </div>
+        </div>
+        <div class="section about-us has-border">
+          <h2>HISTORY</h2>
+          <p>
+            <strong>1983 Eruptions</strong>
+            <br />
+            Small phreatic eruptions occurred at the summit crater on June 25,
+            1983, and June 29, 1983. Ashes reached to a height of 1.2km.
+          </p>
+          <p>
+            <strong>1988 Eruptions</strong>
+            <br />
+            In February 20, 1988, a small ash eruption occurred at Bulusan
+            Volcano. The eruption was accompanied by lightning at the summit. in
+            February 24, 1988, a magnitude 6.9 earthquake occurred 80km NE of
+            Bulusan. The earthquake possibly caused a landslide which was
+            observed on the volcano's middle to lower flank.
+          </p>
+          <p>
+            <strong>1994-95 Eruptions</strong>
+            <br />
+            A phreatic eruption happened at Bulusan Volcano on November 27,
+            1994, which released an ash plume at 1.5km altitude. A second ash
+            explosion on December 3 deposited ashes 7km from the volcano. A
+            strong phreatic explosion on December 12, 1994, created a 3km high
+            ash cloud and caused ashfall 16 km from the volcano. An eruption on
+            January 21, 1995, was accompanied by rumbling noises, lightning
+            flashes over the summit, and light ashfall at the San Benon
+            Observatory 5km SW.
+          </p>
+          <p>
+            <strong>2006 - 2007 Eruptions</strong>
+            <br />
+            A summit eruption occurred at Bulusan Volcano last March 21, 2006,
+            after being silent for 11 years. Researchers believe that there were
+            ten explosions up until June 28, 2006. The eruptions in 2006 were
+            the result of small volumes of magma with an overlying
+            water-saturated zone beneath the summit. Explosive eruptions and
+            ashfall happened between October 10, 2006, and May 12, 2007. On July
+            31, 2007, an explosion ejected ash to an altitude of 6.6 km.
+          </p>
+          <p>
+            <strong>2015 Eruption</strong>
+            <br />
+            A pheatric eruption happened at Bulusan Volcano, Philippines last
+            July 17, 2015. The eruption produced an explosion earthqu- ake which
+            lasted for 11 minutes. Sounds were heard 6km from the summit. The
+            eruption produced a 200m ash plume which caused ashfall in nearby
+            areas. Inflation of the volcano was recorded in June and July 2015.
+          </p>
+        </div>
+        <div class="section volcanoes center-align" id="volcanoes">
+          <ul class="volcanoes-list">
+            <li>
+              <a href="./bulusan.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Bulusan.png" />
+                </div>
+                Bulusan
+              </a>
+            </li>
+            <li>
+              <a href="./kanlaon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Kanlaon.png" />
+                </div>
+                Kanlaon
+              </a>
+            </li>
+            <li>
+              <a href="./pinatubo.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Pinatubo.png" />
+                </div>
+                Pinatubo
+              </a>
+            </li>
+            <li>
+              <a href="./mayon.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Mayon.png" />
+                </div>
+                Mayon
+              </a>
+            </li>
+            <li>
+              <a href="./taal.html">
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/homepage/Taal.png" />
+                </div>
+                Taal
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- volcanoes section ends -->
+    <!-- home section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>
