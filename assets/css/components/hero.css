@@ -1,3 +1,4 @@
+/* styling for page hero */
 .hero {
   justify-content: space-between;
   width: 100%;
@@ -16,44 +17,14 @@
   max-width: 185px;
 }
 
-.text-container.longer-text {
-  max-width: 50%;
-  gap: 0;
-}
-
-.hero-image {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 140px;
-  height: 163px;
-}
-
-.hero-image.volcano {
-  width: 160px;
-  height: 160px;
-}
-
 @media only screen and (min-width: 544px) {
   .hero-wrapper {
     padding-top: 25px;
     padding-bottom: 25px;
   }
 
-  .hero-image {
-    top: 20px;
-    right: 25px;
-    width: 200px;
-    height: 235px;
-  }
-
-  .hero-image.volcano {
-    width: 230px;
-    height: 230px;
-  }
-
-  .text-container.longer-text {
-    max-width: 250px;
+  .text-container {
+    max-width: 60%;
   }
 }
 
@@ -65,30 +36,9 @@
 
   .text-container {
     gap: 16px;
-    max-width: 250px;
   }
 
-  .text-container.longer-text {
-    max-width: 550px;
-    gap: 0;
-  }
-
-  .hero-image {
-    top: 35px;
-    right: 70px;
-    width: 355px;
-    height: 423px;
-  }
-
-  .hero-image.volcano {
-    width: 335px;
-    height: 335px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hero-image.volcano {
-    width: 400px;
-    height: 400px;
+  .text-container .body {
+    max-width: 350px;
   }
 }

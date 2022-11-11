@@ -1,3 +1,4 @@
+/* image used in hazard section in homepage */
 .right-small-image {
   position: absolute;
   right: 15px;
@@ -5,12 +6,14 @@
   width: 15%;
 }
 
+/* image used in cultures and quizzes section in homepage */
 .left-overflow-image,
 .right-overflow-image {
   width: 150px;
   margin-top: 10px;
 }
 
+/* image used in volcanoes summary section */
 .summary-image {
   display: flex;
   flex-direction: column;
@@ -32,6 +35,33 @@
 
 .summary-image p {
   width: fit-content;
+}
+
+/* images used in the page hero */
+.hero-image {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 140px;
+  height: 163px;
+}
+
+/* image used in volcano page hero */
+.hero-image.volcano {
+  width: 160px;
+  height: 160px;
+}
+
+/* images that dont'go over the blue bg */
+.hero-image.no-overflow {
+  width: 150px;
+  height: 135px;
+}
+
+.hero-image.volcano,
+.hero-image.no-overflow {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media only screen and (min-width: 544px) {
@@ -62,6 +92,25 @@
 
   .summary-image p {
     max-width: 50%;
+  }
+
+  .hero-image {
+    top: 20px;
+    right: 25px;
+    width: 200px;
+    height: 235px;
+  }
+
+  .hero-image.volcano {
+    top: 20px;
+    transform: translateY(0);
+    width: 230px;
+    height: 230px;
+  }
+
+  .hero-image.no-overflow {
+    width: 207px;
+    height: 168px;
   }
 }
 
@@ -101,6 +150,34 @@
   }
 
   .summary-image p {
-    max-width: 845px;
+    max-width: 75%;
+  }
+
+  .hero-image {
+    top: 35px;
+    right: 70px;
+    width: 355px;
+    height: 423px;
+  }
+
+  .hero-image.volcano {
+    width: 335px;
+    height: 335px;
+  }
+
+  .hero-image.no-overflow {
+    width: 257px;
+    height: 218px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-image.volcano {
+    width: 400px;
+    height: 400px;
+  }
+
+  .summary-image .image-container {
+    width: auto;
   }
 }

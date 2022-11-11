@@ -1,4 +1,4 @@
-/* page default layout */
+/* page default layout styling */
 .footer-wrapper,
 .navbar-wrapper,
 .main-content,
@@ -53,6 +53,16 @@ h2 {
 
 p {
   font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue-color);
+  font-family: var(--heading);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 544px) {

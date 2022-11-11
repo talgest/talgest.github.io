@@ -1,3 +1,5 @@
+/* styling for volcano list 
+found in homepage and volcano pages */
 .volcanoes-list {
   display: flex;
   flex-direction: column;
@@ -16,13 +18,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  text-decoration: none;
-  color: var(--blue-color);
-  font-family: var(--heading);
-}
-
-.volcanoes-list li a:hover {
-  text-decoration: underline;
 }
 
 .volcano-image {
