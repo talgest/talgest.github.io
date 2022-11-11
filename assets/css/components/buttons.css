@@ -46,6 +46,78 @@
   margin-top: 0;
 }
 
+/* thumbnail button */
+.button.play-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.button.play-btn-container .overlay {
+  width: 100%;
+  background-color: var(--grey-color);
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.button.play-btn-container .icon {
+  cursor: pointer;
+  border: 0;
+  position: relative;
+  background-color: var(--blue-color);
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  transform: translate(0, 0);
+  z-index: 9;
+  transition: all 0.2s ease;
+}
+
+.button.play-btn-container .icon::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid var(--white-color);
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.button.play-btn-container .icon:hover {
+  transform: scale(1.2);
+}
+
+.button.play-btn-container .icon:hover + .overlay {
+  opacity: 0.2;
+}
+
 @media only screen and (min-width: 544px) {
   .button-group {
     flex-direction: row;
