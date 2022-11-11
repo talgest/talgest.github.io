@@ -1,0 +1,28 @@
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.link-list a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 6px;
+  font-family: var(--body-strong);
+  text-decoration: underline;
+}
+
+.link-list a:last-child {
+  margin-bottom: 0;
+}
+
+.link-list a::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: var(--black-color);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Urban Legends</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -15,112 +15,107 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="../../assets/css/app.css" />
 
-    <!-- custom js file link  -->
     <script type="module" src="../../assets/js/app.js"></script>
-    <script src="./about.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
+          </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../volcanoes/volcanoes.html">
-            
+        <ul class="nav-list toggle">
+          <li class="nav-item">
             <span>volcanoes</span>
-          </a>
 
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../volcanoes/volcano/bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../volcanoes/volcano/kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../volcanoes/volcano/mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../volcanoes/volcano/pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../volcanoes/volcano/taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+            <ul class="sub-nav short-text">
+              <li class="sub-nav-item">
+                <a href="../volcanoes/bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="nav-item">
-          <a href="../hazards/hazards.html">
-            
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="../hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../quizzes/quiz/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../quizzes/quiz/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="../quizzes/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../quizzes/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav short-text">
+              <li class="sub-nav-item">
+                <a href="../about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
@@ -128,9 +123,99 @@
     <!-- about section starts  -->
 
     <section class="main about">
-      <p>about</p>
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container">
+            <div class="title-container">
+              <h3 class="eyebrow">ABOUT</h3>
+              <h2 class="title">TALGEST</h2>
+            </div>
+            <p class="body short">
+              Discover about our project
+            </p>
+          </div>
+          <div class="image-container hero-image no-overflow big-logo">
+            <img src="../../assets/images/TalgestLogo.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section about has-border left-align big-image">
+          <div class="wrapper">
+            <h2>ABOUT THE PROJECT</h2>
+            <p>
+              TALGEST is the capstone project of Tech Conquerors group from FEU Institute of Technology. TALGEST aims to be a sufficient knowledge bank particularly in Volcanic calamities.
+            </p>
+          </div>
+          <div class="image-container bottom-align">
+            <img src="../../assets/images/about/feu.png" />
+          </div>
+        </div>
+        <div class="section culture center-align has-border">
+          <h2>THE TEAM</h2>
+          <p>Tech Conquerors is a team under FEU Tech's BS Information Technology undergraduate program with specialization in Digital Arts.</p>
+          <div>
+            <ul class="icons-list">
+              <li>
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/about/jayce.png" />
+                </div>
+                <span>John Carlo G. Infante</span>
+              </li>
+              <li>
+                <div class="image-container volcano-image">
+                  <img src="../../assets/images/about/janine.png" />
+                </div>
+                <span>Janine V. Soriano</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section about">
+          <div class="title-wrapper">
+            <div class="image-container right-small-image">
+              <img src="../../assets/images/about/contact-us.png" />
+            </div>
+            <h2>CONTACT US</h2>
+            <p>
+              Feel free to message us what you experience about our project.
+            </p>
+          </div>
+          <div class="content-wrapper short-text">
+            <div>
+              <h3>Team Email</h3>
+              <div class="link-list">
+                <a href="mailto:techconquerorsv2@gmail.com">
+                  techconquerorsv2@gmail.com
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>FEU Institute of Technology</h3>
+                <div class="link-list">
+                  <a href="https://www.feutech.edu.ph/" target="_blank">https://www.feutech.edu.ph/</a>
+                  <a href="mailto:info@feutech.edu.ph">info@feutech.edu.ph</a>
+                  <a href="tel:(02) 8281 8888">(02) 8281 8888</a>  
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- about section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

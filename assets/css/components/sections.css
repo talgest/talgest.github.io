@@ -38,6 +38,14 @@
   gap: 16px;
 }
 
+.section .content-wrapper.short-text {
+  gap: 35px;
+}
+
+.section .content-wrapper.short-text > div {
+  width: 50%;
+}
+
 /* section with center-aligned content */
 .section.center-align {
   text-align: center;
@@ -49,6 +57,7 @@
 
 .section.center-align p {
   margin: 0 auto;
+  max-width: 700px;
 }
 
 .section.left-align,
