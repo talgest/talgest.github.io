@@ -2,7 +2,7 @@
 .right-small-image {
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 15px;
   width: 15%;
 }
 
@@ -10,7 +10,7 @@
 .left-overflow-image,
 .right-overflow-image {
   width: 150px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 /* image used in volcanoes summary section */
@@ -40,7 +40,7 @@
 /* images used in the page hero */
 .hero-image {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
   width: 140px;
   height: 163px;
@@ -62,6 +62,17 @@
 .hero-image.no-overflow {
   top: 50%;
   transform: translateY(-50%);
+}
+
+.hero-image.big-logo {
+  width: 200px;
+  height: 125px;
+  margin-top: -5px;
+}
+
+/* aligns images to bottom of container */
+.image-container.bottom-align {
+  margin-top: auto;
 }
 
 @media only screen and (min-width: 544px) {
@@ -111,6 +122,11 @@
   .hero-image.no-overflow {
     width: 207px;
     height: 168px;
+  }
+
+  .hero-image.big-logo {
+    width: 255px;
+    height: 165px;
   }
 }
 
@@ -168,6 +184,12 @@
   .hero-image.no-overflow {
     width: 257px;
     height: 218px;
+  }
+
+  .hero-image.big-logo {
+    width: 380px;
+    height: 250px;
+    margin-top: -10px;
   }
 }
 

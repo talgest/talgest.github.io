@@ -1,0 +1,32 @@
+/* styling for icon list about page */
+.icons-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.icons-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.icons-list li span {
+  color: var(--blue-color);
+  font-family: var(--body-strong);
+}
+
+@media only screen and (min-width: 544px) {
+  .icons-list {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 100px;
+  }
+}

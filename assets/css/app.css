@@ -16,9 +16,10 @@
 @import './components/buttons.css';
 @import './components/volcanoes-list.css';
 @import './components/read-more.css';
+@import './components/link-list.css';
+@import './components/icons-list.css';
 
 /* page stylings */
 @import '../../assets/css/page.css';
-@import '../../pages/about/about.css';
 @import '../../pages/hazards/hazards.css';
 @import '../../pages/quizzes/quizzes.css';

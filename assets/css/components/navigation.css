@@ -116,10 +116,10 @@
 .sub-nav-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .sub-nav-item:last-child {
@@ -155,7 +155,7 @@
   background: transparent;
   border: 0;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  padding: 15px 35px 16px 0px;
 }
 
 .nav-toggle span,
@@ -176,11 +176,11 @@
 }
 
 span::before {
-  top: -10px;
+  top: -15px;
 }
 
 span::after {
-  bottom: -10px;
+  bottom: -15px;
 }
 
 .nav-toggle.active span {
@@ -252,7 +252,7 @@ span::after {
   }
 
   .nav-item a {
-    padding: 26px 10px;
+    padding: 26px 15px;
     height: 100px;
   }
 
@@ -296,10 +296,14 @@ span::after {
     border: 1px solid var(--blue-color);
   }
 
+  .sub-nav.short-text {
+    max-width: 195px;
+  }
+
   .sub-nav-item {
     position: relative;
     height: 44px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 0;
     border-bottom: 1px solid var(--blue-color);
     transition: all 0.2s ease;
@@ -315,7 +319,7 @@ span::after {
 
   .sub-nav-item a {
     height: auto;
-    padding: 10px 15px 10px 50px;
+    padding: 15px 15px 15px 50px;
     position: absolute;
     left: 0;
     right: 0;
