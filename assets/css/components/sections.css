@@ -46,6 +46,30 @@
   width: 50%;
 }
 
+/* section with border */
+.section.has-border {
+  border-bottom: 1px solid var(--blue-color);
+}
+
+/* section with gray bg */
+.section.grey-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.section.grey-bg:last-child {
+  margin-bottom: 0;
+}
+
+.section.big-image {
+  gap: 16px;
+}
+
 /* section with center-aligned content */
 .section.center-align {
   text-align: center;
@@ -69,31 +93,6 @@
   text-align: center;
 }
 
-/* section with border */
-.section.has-border {
-  border-bottom: 1px solid var(--blue-color);
-}
-
-/* section with gray bg */
-.section.grey-bg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-
-.section.grey-bg:last-child {
-  margin-bottom: 0;
-}
-
-.section.big-image {
-  gap: 16px;
-}
-
 @media only screen and (min-width: 544px) {
   .section {
     padding: 20px 25px;
@@ -110,7 +109,6 @@
   .section.grey-bg {
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
   }
 
   .section.grey-bg:last-child {
@@ -191,7 +189,6 @@
     display: block;
     padding-top: 35px;
     padding-bottom: 35px;
-    margin-bottom: 35px;
   }
 
   .section.grey-bg:last-child {
@@ -215,6 +212,7 @@
   }
 
   .section.big-image {
+    display: flex;
     gap: 60px;
     flex-direction: row;
     align-items: flex-start;

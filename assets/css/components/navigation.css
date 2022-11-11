@@ -116,7 +116,7 @@
 .sub-nav-item {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -303,7 +303,7 @@ span::after {
   .sub-nav-item {
     position: relative;
     height: 44px;
-    padding: 15px 20px;
+    padding: 10px 15px;
     margin: 0;
     border-bottom: 1px solid var(--blue-color);
     transition: all 0.2s ease;
@@ -318,6 +318,7 @@ span::after {
   }
 
   .sub-nav-item a {
+    display: contents;
     height: auto;
     padding: 15px 15px 15px 50px;
     position: absolute;

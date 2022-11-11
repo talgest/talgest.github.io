@@ -46,7 +46,7 @@ export const navigation = () => {
     })
   }
 
-  window.addEventListener('resize', function() {
+  window.addEventListener('resize', () => {
     mobileNavToggle.classList.remove('active');
     navContainer.classList.remove('active');
   });

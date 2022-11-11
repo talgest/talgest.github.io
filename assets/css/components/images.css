@@ -1,3 +1,8 @@
+/* image container default styling */
+.image-container {
+  position: relative;
+}
+
 /* image used in hazard section in homepage */
 .right-small-image {
   position: absolute;

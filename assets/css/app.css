@@ -18,8 +18,7 @@
 @import './components/read-more.css';
 @import './components/link-list.css';
 @import './components/icons-list.css';
+@import './components/modal.css';
 
-/* page stylings */
+/* page styling */
 @import '../../assets/css/page.css';
-@import '../../pages/hazards/hazards.css';
-@import '../../pages/quizzes/quizzes.css';

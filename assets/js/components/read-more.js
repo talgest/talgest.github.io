@@ -2,7 +2,7 @@ export const readMore = () => {
   const readMoreBtn = document.querySelectorAll('.read-more-toggle');
 
   readMoreBtn.forEach((btn) => {
-    btn.addEventListener('click', function(e) {
+    btn.addEventListener('click', (e) => {
       e.preventDefault();
       const readMoreId = e.target.getAttribute('data-read-more-id');
       const dots = document.querySelector(`.dots[data-read-more-id="${readMoreId}"]`);
