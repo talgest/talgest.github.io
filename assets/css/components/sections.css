@@ -91,6 +91,11 @@
   margin-right: auto;
 }
 
+.section.right-align .button-group .button,
+.section.left-align .button-group .button {
+  margin: 0;
+}
+
 @media only screen and (min-width: 544px) {
   .section {
     padding: 20px 25px;
