@@ -42,10 +42,6 @@
   gap: 35px;
 }
 
-.section .content-wrapper.short-text > div {
-  width: 50%;
-}
-
 /* section with border */
 .section.has-border {
   border-bottom: 1px solid var(--blue-color);
@@ -75,10 +71,6 @@
   text-align: center;
 }
 
-.section.center-align {
-  text-align: center;
-}
-
 .section.center-align p {
   margin: 0 auto;
   max-width: 700px;
@@ -91,6 +83,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.section.left-align .button,
+.section.right-align .button {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 544px) {
@@ -130,13 +128,17 @@
     text-align: left;
   }
 
+  .section.left-align .button {
+    margin-left: 0;
+  }
+
   .section.right-align {
     align-items: flex-end;
     text-align: right;
   }
 
-  .section.right-align {
-    text-align: right;
+  .section.right-align .button {
+    margin-right: 0;
   }
 
   .section.right-align p,
@@ -150,6 +152,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .section.with-overflow-image {
+    flex-direction: column;
+    margin-bottom: 16px;
   }
 
   /* the first content just below the hero */
@@ -222,6 +229,10 @@
 
   .section.big-image .wrapper {
     width: 60%;
+  }
+
+  .section .content-wrapper.short-text > div {
+    width: 50%;
   }
 
   .page-first-content {

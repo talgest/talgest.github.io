@@ -52,6 +52,8 @@
   position: absolute;
   top: 51px;
   left: 0;
+  overflow: scroll;
+  height: calc(100vh - 50px);
 }
 
 .nav-list .nav-item {
@@ -134,10 +136,11 @@
   height: 50px;
   box-sizing: border-box;
   transition: color 0.5s ease;
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
-.nav-item > span {
-  background-color: var(--blue-color);
+.nav-item > a > span {
   color: var(--white-color);
 }
 
@@ -176,11 +179,11 @@
 }
 
 span::before {
-  top: -15px;
+  top: -10px;
 }
 
 span::after {
-  bottom: -15px;
+  bottom: -10px;
 }
 
 .nav-toggle.active span {
@@ -266,8 +269,13 @@ span::after {
     font-size: 1.25rem;
   }
 
-  .nav-item > span {
+  .nav-item > span,
+  .nav-item  > a {
     background-color: transparent;
+    color: var(--blue-color);
+  }
+
+  .nav-item > a > span {
     color: var(--blue-color);
   }
 

@@ -67,14 +67,6 @@
   padding: 2px 16px;
 }
 
-@-webkit-keyframes animatetop {
-  from {
-    opacity: 0;
- }
-  to {
-    opacity: 1;
- }
-}
 @keyframes animatetop {
   from {
     opacity: 0;

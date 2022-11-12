@@ -29,7 +29,15 @@
   color: var(--white-color);
 }
 
-.button.white:hover {
+/* button with blue bg and white text */
+.button.dark {
+  background-color: var(--blue-color);
+  border: 3px solid var(--blue-color);
+  color: var(--white-color);
+}
+
+.button.white:hover,
+.button.dark:hover {
   background-color: var(--white-color);
   color: var(--blue-color);
 }
@@ -119,6 +127,11 @@
 
 .button.play-btn-container .icon:hover + .overlay {
   opacity: 0.2;
+}
+
+/* option buttons for quiz page */
+.button.option {
+  padding: 9px;
 }
 
 @media only screen and (min-width: 544px) {
