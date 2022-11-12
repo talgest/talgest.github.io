@@ -62,7 +62,11 @@
 /* images that dont'go over the blue bg */
 .hero-image.no-overflow {
   width: 150px;
-  height: 135px;
+  height: 120px;
+}
+
+.hero-image.no-overflow img {
+  width: auto;
 }
 
 .hero-image.volcano,
@@ -93,6 +97,7 @@
   .left-overflow-image {
     position: absolute;
     width: 170px;
+    margin-top: 0;
   }
 
   .right-small-image,

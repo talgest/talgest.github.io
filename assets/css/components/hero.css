@@ -21,6 +21,10 @@
   min-height: 24px;
 }
 
+.text-container .title.long {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 544px) {
   .hero-wrapper {
     padding-top: 25px;
@@ -33,6 +37,10 @@
 
   .text-container .body.short {
     min-height: 32px;
+  }
+
+  .text-container .title.long {
+    font-size: 3.5rem;
   }
 }
 
@@ -52,5 +60,9 @@
 
   .text-container .body.short {
     min-height: 48px;
+  }
+
+  .text-container .title.long {
+    font-size: 3.75rem;
   }
 }
