@@ -18,6 +18,7 @@ export const popUp = () => {
 
       closeBtn.addEventListener('click', () => {
         popup.style.display = 'none'
+        iframe.remove();
       });
     });
   });
