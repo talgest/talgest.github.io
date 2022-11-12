@@ -40,13 +40,13 @@ export const quiz = () => {
     // condition check for player remark and remark color
     if (playerScore <= 3) {
       remark = 'Bad Grades, Keep Practicing.';
-      remarkColor = 'red';
+      remarkColor = '#DFCCCC';
     } else if (playerScore >= 4 && playerScore < 7) {
       remark = 'Average Grades, You can do better.';
       remarkColor = 'orange';
     } else if (playerScore >= 7) {
       remark = 'Excellent, Keep the good work going.';
-      remarkColor = 'green';
+      remarkColor = '#79F3DB';
     }
     const playerGrade = (playerScore / 10) * 100;
 
@@ -128,7 +128,7 @@ export const quiz = () => {
     //checking if checked radio button is same as answer
     options.forEach((option) => {
       if (option.checked === true && option.value === currentQuestionAnswer) {
-        document.getElementById(correctOption).style.backgroundColor = 'green';
+        document.getElementById(correctOption).style.backgroundColor = '#79F3DB';
         playerScore++;
         indexNumber++;
         //set to delay question number till when next question loads
