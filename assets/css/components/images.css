@@ -1,6 +1,8 @@
 /* image container default styling */
 .image-container {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* image used in hazard section in homepage */

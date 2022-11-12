@@ -39,7 +39,8 @@ h3 {
   font-family: var(--heading);
 }
 
-p {
+p,
+label {
   font-family: var(--body);
 }
 
@@ -58,7 +59,9 @@ h2 {
 }
 
 p,
-a {
+a,
+label,
+.button {
   font-size: 0.75rem;
 }
 
@@ -95,7 +98,9 @@ a:hover {
   }
 
   p,
-  a {
+  a,
+  label,
+  .button {
     font-size: 1.05rem;
   }
 }
@@ -126,7 +131,9 @@ a:hover {
   }
 
   p,
-  a {
+  a,
+  label,
+  .button {
     font-size: 1.25rem;
   }
 }

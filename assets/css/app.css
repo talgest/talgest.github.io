@@ -18,7 +18,8 @@
 @import './components/read-more.css';
 @import './components/link-list.css';
 @import './components/icons-list.css';
-@import './components/modal.css';
+@import './components/video-popup.css';
+@import './components/quiz.css';
 
 /* page styling */
 @import '../../assets/css/page.css';
