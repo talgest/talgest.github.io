@@ -4,133 +4,267 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
-
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <title>Quiz | Safety Information</title>
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../../assets/css/app.css" />
+    <link rel="stylesheet" href="../../assets/css/app.css" />
 
-    <!-- custom js file link  -->
-    <script type="module" src="../../../assets/js/app.js"></script>
-    <script src="../quizzes.js"></script>
+    <script type="module" src="../../assets/js/app.js"></script>
   </head>
   <body>
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-      <div class="nav-branding">
-        <a class="nav-logo" href="../../../index.html">
-          <i class="fas fa-home"></i>
-          <span>home</span>
-        </a>
-        <div class="nav-mobile"><button class="nav-toggle"><span></span></button></div>
-      </div>
+      <div class="navbar-wrapper">
+        <div class="nav-marker"></div>
+        <div class="nav-branding">
+          <a class="nav-logo" href="../../index.html">
+            <div class="image-container nav-image">
+              <img src="../../assets/images/TalgestLogo.png" />
+            </div>
+          </a>
+          <div class="nav-mobile">
+            <button class="nav-toggle"><span></span></button>
+          </div>
+        </div>
 
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="../../volcanoes/volcanoes.html">
-            
+        <ul class="nav-list toggle">
+          <li class="nav-item">
             <span>volcanoes</span>
-          </a>
 
-          <ul class="sub-nav short-text">
-            <li class="sub-nav-item">
-              <a href="../../volcanoes/volcano/bulusan.html">Bulusan</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../volcanoes/volcano/kanlaon.html">Kanlaon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../volcanoes/volcano/mayon.html">Mayon</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../volcanoes/volcano/pinatubo.html">Pinatubo</a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../volcanoes/volcano/taal.html">Taal</a>
-            </li>
-          </ul>
-        </li>
+            <ul class="sub-nav short-text">
+              <li class="sub-nav-item">
+                <a href="../volcanoes/bulusan.html">Bulusan</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/kanlaon.html">Kanlaon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/pinatubo.html">Pinatubo</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/mayon.html">Mayon</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../volcanoes/taal.html">Taal</a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="nav-item">
-          <a href="../../hazards/hazards.html">
-            
+          <li class="nav-item">
             <span>hazard</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../hazards/hazard/safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../cultures/cultures.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="../hazards/volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="../hazards/safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>culture</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/notable-sites.html">
-                Notable Sites
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="../../cultures/culture/urban-legends.html">
-                Urban Legends
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../quizzes/quizzes.html">
-            
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="../cultures/urban-legends.html">
+                  Urban Legends
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
             <span>quizzes</span>
-          </a>
-          <ul class="sub-nav">
-            <li class="sub-nav-item">
-              <a href="./volcanic-hazard.html">
-                Volcanic Hazards
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a href="./safety-info.html">
-                Safety Informations
-              </a>
-            </li>
-          </ul>
-        </li>
 
-        <li class="nav-item">
-          <a href="../../about/about.html">
-            
-            <span>about</span>
-          </a>
-        </li>
-      </ul>
+            <ul class="sub-nav">
+              <li class="sub-nav-item">
+                <a href="./volcanic-hazard.html">
+                  Volcanic Hazards
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="./safety-info.html">
+                  Safety Informations
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <span>About Us</span>
+
+            <ul class="sub-nav short-text">
+              <li class="sub-nav-item">
+                <a href="../about/about.html">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- navbar section ends -->
 
-    <!-- quiz safety section starts  -->
+    <!-- quiz section starts  -->
 
-    <section class="main quizzes safety">
-      <p>quizzes safety</p>
+    <section class="main quiz">
+      <div class="hero blue-bg">
+        <div class="hero-wrapper">
+          <div class="text-container">
+            <div class="title-container">
+              <h3 class="eyebrow">SAFETY INFORMATION</h3>
+              <h2 class="title">QUIZ</h2>
+            </div>
+            <p class="body short">
+              Test your knowledge in Safety Information!
+            </p>
+          </div>
+          <div class="image-container hero-image no-overflow">
+            <img
+              src="../../assets/images/hazards/safety-information/hero-icon.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section quiz center-align">
+          <div class="score-container" id="score-safety">
+            <div class="score-content-container blue-bg">
+              <h3>Congratulations, Quiz Completed.</h3>
+
+              <div class="grade-details">
+                <p>Attempts : 10</p>
+                <p>
+                  Wrong Answers :
+                  <span class="wrong-answers"></span>
+                </p>
+                <p>
+                  Right Answers :
+                  <span class="right-answers"></span>
+                </p>
+                <p>
+                  Grade :
+                  <span class="grade-percentage"></span>
+                  %
+                </p>
+                <p><span class="remarks"></span></p>
+              </div>
+
+              <div class="score-button-container">
+                <button class="button white reset-btn" data-id="score-safety">Continue</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-quiz-container">
+            <div class="game-details-container">
+              <p>
+                Score :
+                <strong class="player-score"></strong>
+                / 10
+              </p>
+              <p>
+                Question :
+                <strong class="question-number"></strong>
+                / 10
+              </p>
+            </div>
+
+            <div class="game-question-container">
+              <h3 class="display-question"></h3>
+            </div>
+
+            <div class="game-options-container">
+              <span>
+                <input
+                  type="radio"
+                  id="option-one"
+                  name="option"
+                  class="radio"
+                  value="optionA"
+                />
+                <label
+                  for="option-one"
+                  class="button option"
+                  id="option-one-label"
+                ></label>
+              </span>
+
+              <span>
+                <input
+                  type="radio"
+                  id="option-two"
+                  name="option"
+                  class="radio"
+                  value="optionB"
+                />
+                <label
+                  for="option-two"
+                  class="button option"
+                  id="option-two-label"
+                ></label>
+              </span>
+
+              <span>
+                <input
+                  type="radio"
+                  id="option-three"
+                  name="option"
+                  class="radio"
+                  value="optionC"
+                />
+                <label
+                  for="option-three"
+                  class="button option"
+                  id="option-three-label"
+                ></label>
+              </span>
+
+              <span>
+                <input
+                  type="radio"
+                  id="option-four"
+                  name="option"
+                  class="radio"
+                  value="optionD"
+                />
+                <label
+                  for="option-four"
+                  class="button option"
+                  id="option-four-label"
+                ></label>
+              </span>
+            </div>
+
+            <div class="next-button-container">
+              <button class="button next-btn">Next Question</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- quiz safety section ends -->
+    <!-- quiz section ends -->
+
+    <!-- footer section starts -->
+    <footer class="blue-bg">
+      <div class="footer-wrapper">
+        <h3 class="footer-text">Tech Conquerors. 2022.</h3>
+        <div class="image-container footer-image">
+          <img src="../../assets/images/TechConquerorsLogo_PNG.png" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
   </body>
 </html>

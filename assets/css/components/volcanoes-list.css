@@ -24,6 +24,10 @@ found in homepage and volcano pages */
   width: 60%;
 }
 
+.volcano-image img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 915px) {
   .volcanoes-list {
     flex-direction: row;
